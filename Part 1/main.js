@@ -21,8 +21,7 @@ function result() {
     const yItem = randomValueFromArray(insertY);
     const zItem = randomValueFromArray(insertZ);
 
-    newStory = newStory.replace(":insertx:",xItem)
-    newStory = newStory.replace(":insertx:",xItem)
+    newStory = newStory.replaceAll(":insertx:",xItem)
     newStory = newStory.replace(":inserty:",yItem)
     newStory = newStory.replace(":insertz:",zItem)
 
@@ -34,9 +33,9 @@ function result() {
 
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300 / 14);
-    weight = weight + " KG";
+    weight = weight + "  stone";
     let temperature =  Math.round((94-32) * (5/9));
-    temperature = temperature + " celsius";
+    temperature = temperature + "  centigrade";
 
     newStory = newStory.replace('300 pounds', weight)
     newStory = newStory.replace("94 fahrenheit", temperature)
