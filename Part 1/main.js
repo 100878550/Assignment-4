@@ -38,8 +38,8 @@ function result() {
     let temperature =  Math.round((94-32) * (5/9));
     temperature = temperature + " celsius";
 
-    storyText = storyText.replace('300 pounds', weight)
-    storyText = newStory.replace("94 fahrenheit", temperature)
+    newStory = newStory.replace('300 pounds', weight)
+    newStory = newStory.replace("94 fahrenheit", temperature)
 
   }
 
