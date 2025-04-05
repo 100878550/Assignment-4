@@ -32,11 +32,11 @@ images.forEach((image) =>{
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () => {
     const currentClass = btn.getAttribute('class');
-    if (currentClass === 'light'){
+    if (currentClass === 'dark'){
         btn.setAttribute('class','light');
         btn.textContent = 'Lighten';
         overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)'
-    }else{
+    } else {
         btn.setAttribute('class','dark');
         btn.textContent - "Darken";
         overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
