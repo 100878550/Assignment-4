@@ -170,6 +170,7 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
+const size = 10;
 const evilCirlce = new EvilCircle(
   random(0 + size, width - size),
   random(0 + size, height - size)
