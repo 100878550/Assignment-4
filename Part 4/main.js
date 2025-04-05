@@ -187,7 +187,7 @@ function loop() {
     }
   }
   evilCirlce.draw();
-  evilCirlce.update();
+  evilCirlce.checkBounds();
   evilCirlce.collisionDetect();
 
   updateScore();
