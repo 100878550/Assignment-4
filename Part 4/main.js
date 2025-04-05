@@ -170,10 +170,9 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
-const size = 10;
 const evilCirlce = new EvilCircle(
-  random(0 + size, width - size),
-  random(0 + size, height - size)
+  random(0 + 10, width - 10),
+  random(0 + 10, height - 10)
 )
 function loop() {
   ctx.fillStyle = "rgb(0 0 0 / 25%)";
