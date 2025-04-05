@@ -1,7 +1,7 @@
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
-const btn = document.querySelector('.dark');
+const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
@@ -32,7 +32,7 @@ images.forEach((image) =>{
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () => {
     const currentClass = btn.getAttribute('class');
-    if (currentClass === 'dark'){
+    if (currentClass === 'light'){
         btn.setAttribute('class','light');
         btn.textContent = 'Lighten';
         overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)'
