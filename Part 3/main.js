@@ -74,12 +74,8 @@ class Ball {
   
 
 
-const testBall1 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall2 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall3 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall4 = new Ball(50, 100, 4, 4, "blue", 10);
 
-const balls = [testBall1,testBall2,testBall3,testBall4];
+const balls = [];
 
 while (balls.length < 25) {
   const size = random(10, 20);
